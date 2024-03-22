@@ -1,11 +1,14 @@
 {
     "compilerOptions": {
-      "module": "system",
-      "noImplicitAny": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "outFile": "../../built/local/tsc.js",
-      "sourceMap": true
+        "outDir": "dist",
+        "target": "esnext",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
     },
-    "include": ["./api/*.ts"]
-  }
+    "include": [
+        "./api/*.ts"
+    ]
+}
