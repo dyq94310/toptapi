@@ -51,3 +51,6 @@ npm test
 ```
 npm run dev
 ```
+
+
+ npm install otpauth
