@@ -21,17 +21,11 @@ const OTPAuth = require('otpauth');
 let totp = new OTPAuth.TOTP({
   digits: 6,
   period: 30,
-  secret: "SJKJKSIUIUSJHJHJH",
+  secret: process.env.code,
 });
 
 
 app.get('/', (req, res) => {
-  res.json({
-    message: "who are you",
-  });
-});
-
-app.get('/get', (req, res) => {
   if (counter >= max) {
     res.json({
       message: "Max requests reached",
